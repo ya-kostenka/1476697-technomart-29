@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 - Студент: [Константин Сиденко](https://up.htmlacademy.ru/htmlcss/29/user/1476697).
-- Наставник: `Артем Михайлов (https://htmlacademy.ru/profile/id327277)`.
+- Наставник: `[Артем Михайлов] (https://htmlacademy.ru/profile/id327277)`.
 
 ---
 
