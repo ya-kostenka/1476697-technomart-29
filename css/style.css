@@ -439,3 +439,159 @@ img {
   text-decoration: none;
   color: #BA2732;
 }
+
+.logged-in-user-list {
+  list-style: none;
+}
+
+.username-box {
+  background-color: var(--basic-white);
+}
+
+.username {
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--basic-black);
+}
+
+.username:hover {
+}
+
+.username:active {
+  color: #c5c5c5;
+}
+
+.user-login-nav {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--dark-grey);
+}
+
+.user-login-nav:hover {
+  color: #ee3643;
+}
+
+.user-login-nav:active {
+  color: #c5c5c5;
+}
+
+.breadcrumbs-list {
+  list-style: none;
+}
+
+.breadcrumbs-item {
+  font-family: PT Sans;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--basic-black);
+}
+
+.good-title-box {
+  background: #f2f6f8;
+}
+
+.options-box {
+  background-color: #f7f3ec;
+}
+
+.options-box h2 {
+  font-family: "PT Sans", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--basic-black);
+}
+
+.show-button-box {
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+}
+
+.show-button {
+  font-family: "PT Sans", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--basic-black);
+}
+
+/* + Анимация c помощью JS: замена изображения на кнопки 
+
+.popular-good-purchase-options {
+  display: none;
+}
+
+.popular-good-image:hover {
+  display: none;
+}
+*/
+
+.popular-good-purchase-options {
+  list-style: none;
+}
+
+.buy-button {
+  background: #63a63e;
+  box-shadow: inset 0px -3px 0px #367315;
+  border-radius: 2px;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--basic-white);
+}
+
+.buy-button:hover {
+  background: #5fbb2d;
+}
+
+.buy-button:active {
+  background: #518534;
+}
+
+.favourite-button {
+  background: #ffffff;
+  border: 1px solid #eaeaea;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--dark-grey);
+}
+
+.favourite-button:hover {
+  border: 3px solid #32425c;
+}
+
+.favourite-button-box:active {
+  opacity: 0.3;
+}
+
+.perforators-info .section-title {
+  color: var(--basic-black);
+}
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-item-box {
+  width: 38px;
+  height: 38px;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 2px;
+}
+
+.pagination-item {
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--basic-black);
+}
+
+.pagination-item-box:hover {
+  border: 1px solid #c5c5c5;
+}
+
+.pagination-item-box:active {
+  border: 1px solid #ee3643;
+}
+
+.pagination-item--active {
+  background: #ee3643;
+  color: var(--basic-white);
+}
