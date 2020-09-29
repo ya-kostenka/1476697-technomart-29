@@ -60,12 +60,21 @@ img {
   overflow: hidden;
 }
 
+.main-header {
+  background-color: rgba(0, 0, 0, 0.0001);
+}
+
 .logo {
   background: #ee3643;
+  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
 }
 
 .logo:active {
   background: #ba2732;
+}
+
+.main-header-logo {
+  background-size: 220px 47px;
 }
 
 .purchase-list {
@@ -191,7 +200,7 @@ img {
   background: #3bbce3;
 }
 
-.technique-item {
+.tech-item {
   background: #dc91d8;
 }
 
@@ -273,13 +282,6 @@ img {
   color: var(--basic-white);
 }
 
-.new-sticker {
-  font-size: 14px;
-  line-height: 18px;
-  color: var(--basic-white);
-  background: #ee3643;
-}
-
 .popular-brands-list {
   list-style: none;
 }
@@ -290,11 +292,12 @@ img {
 }
 
 .popular-brands-item:hover {
-  box-shadow: 0 0 5px var(--extra-transparent-black);
+  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
 }
 
 .popular-brands-item:active {
-  opacity: 0.3;
+  opacity: 0.5;
+  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
 }
 
 .services {
@@ -323,6 +326,27 @@ img {
   background: #293449;
 }
 
+/*
+
+Текущая страница - так? Не работает.
+
+.services-button--active {
+  background: #ffffff;
+  box-shadow: 0px 1px 0px #ffffff;
+  color: #32425c;
+}
+ 
+
+Или просто задать класс и переопределить стили - так?
+
+.services-button-active {
+  background: #ffffff;
+  box-shadow: 0px 1px 0px #ffffff;
+  color: #32425c;
+}
+
+*/
+
 .about-shop-info .section-title {
   color: var(--basic-black);
 }
@@ -343,6 +367,10 @@ img {
 
 .main-footer {
   background: #32425c;
+}
+
+.main-footer-logo {
+  background-size: 220px 68px;
 }
 
 .footer-site-nav-list {
@@ -537,7 +565,7 @@ img {
 }
 
 .favourite-button:active {
-  opacity: 0.3;
+  opacity: 0.5;
 }
 
 .perforators-info .section-title {
@@ -567,7 +595,22 @@ img {
   border: 1px solid #ee3643;
 }
 
+/*
+
+ Текущая страница - так? Не работает.
+
 .pagination-item--active {
+  border: none;
   background: #ee3643;
   color: var(--basic-white);
 }
+
+Или просто задать класс и переопределить стили - так?
+
+.pagination-item-active {
+  border: none;
+  background: #EE3643;
+  color: var(--basic-white);
+}
+
+*/
