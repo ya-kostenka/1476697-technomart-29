@@ -32,13 +32,13 @@
         </form>
         <ul class="purchase-list">
           <li>
-            <a class="button favs-button purchase-item" href="">Закладки: 0</a>
+            <a class="button purchase-item favs-button" href="">Закладки: 0</a>
           </li>
           <li>
-            <a class="button cart-button purchase-item" href="">Корзина: 0</a>
+            <a class="button purchase-item cart-button" href="">Корзина: 0</a>
           </li>
           <li>
-            <a class="button checkout-button purchase-item" href="">Оформить заказ</a>
+            <a class="button purchase-item checkout-button" href="">Оформить заказ</a>
           </li>
         </ul>
       </section>
@@ -51,25 +51,23 @@
           <a class="button header-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
           <p class="header-address">г. Санкт-Петербург, ул. Б. Конюшеннная, д.19/8</p>
         </div>
-        <div class="login-nav">
-          <h2 class="visually-hidden">Личный кабинет</h2>
-          <ul class="login-list">
-            <li>
-              <a class="button login-button sign-in-button" href="">
-                <svg class="sign-in-icon" width="20" height="17" viewBox="0 0 20 17" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path d="M14.1667 8.5L5.71429 0V6H0V11H5.71429V17L14.1667 8.5Z" fill="#C5C5C5" />
-                  <path
-                    d="M16.1771 15.01H11.3895V17H16.1771C18.2514 17 19.0381 15.19 19.0619 13.974V3.028C19.0381 1.811 18.2514 0 16.1771 0H11.3895V1.99H16.1771C16.9762 1.99 17.1219 2.671 17.1391 3.047V13.951C17.1229 14.327 16.9762 15.01 16.1771 15.01Z"
-                    fill="#C5C5C5" />
-                </svg>
-                Войти</a>
-            </li>
-            <li>
-              <a class="button login-button join-button" href="">Регистрация</a>
-            </li>
-          </ul>
-        </div>
+        <h2 class="visually-hidden">Личный кабинет</h2>
+        <ul class="login-list">
+          <li>
+            <a class="button login-button sign-in-button" href="">
+              <svg class="sign-in-icon" width="20" height="17" viewBox="0 0 20 17" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.1667 8.5L5.71429 0V6H0V11H5.71429V17L14.1667 8.5Z" fill="#C5C5C5" />
+                <path
+                  d="M16.1771 15.01H11.3895V17H16.1771C18.2514 17 19.0381 15.19 19.0619 13.974V3.028C19.0381 1.811 18.2514 0 16.1771 0H11.3895V1.99H16.1771C16.9762 1.99 17.1219 2.671 17.1391 3.047V13.951C17.1229 14.327 16.9762 15.01 16.1771 15.01Z"
+                  fill="#C5C5C5" />
+              </svg>
+              Войти</a>
+          </li>
+          <li>
+            <a class="button login-button join-button" href="">Регистрация</a>
+          </li>
+        </ul>
       </div>
       <nav class="nav">
         <h2 class="visually-hidden">Навигация по сайту</h2>
@@ -173,8 +171,8 @@
         <li class="goods-item">
           <img class="good-image" width="184" height="164" src="img/9000.jpg" alt="Перфоратор BOSCH BFG 9000">
           <div class="goods-purchase-options">
-            <button class="button purchase-button buy-button ">КУПИТЬ</button>
-            <button class="button purchase-button to-favs-button ">В ЗАКЛАДКИ</button>
+            <button class="button purchase-button buy-button">КУПИТЬ</button>
+            <button class="button purchase-button to-favs-button">В ЗАКЛАДКИ</button>
           </div>
           <h3>Перфоратор BOSCH <br> BFG 9000</h3>
           <p class="old-price">32500 Р.</p>
@@ -279,11 +277,11 @@
                 Ведь мы неплохо заработаем,<br>
                 поднимая его на ваш этаж!</p>
             </li>
-            <li hidden class="services-info-item">
+            <li class="visually-hidden services-info-item">
               <h3 class="section-title">ГАРАНТИЯ</h3>
               <p class="section-text">...</p>
             </li>
-            <li hidden class="services-info-item">
+            <li class="visually-hidden services-info-item">
               <h3 class="section-title">КРЕДИТ</h3>
               <p class="section-text">...</p>
             </li>
@@ -297,9 +295,9 @@
         <p class="section-text">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
           строительства не оставит
           равнодушными любителей сэкономить на гастарбайтерах. <br>
-          <br> Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со
-          многими транспортными
-          компаниями:</p>
+          <br>
+          Мы можем доставить ваш товар в самые отдаленные точки России! <br>
+          Техномарт работает со многими транспортными компаниями:</p>
         <ul class="shipping-partners-list">
           <li class="shipping-partners-item">Деловые линии</li>
           <li class="shipping-partners-item">Автотрейдинг</li>
@@ -324,6 +322,10 @@
       <a class="logo footer-logo" href="index.html">
         <img class="footer-logo-icon" src="img/logo-technomart.svg" width="138" height="23" alt="Логотип">
       </a>
+      <div class="footer-contacts">
+        <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 </p>
+        <p>+7 (812) 555-05-55</p>
+      </div>
       <section class="footer-nav">
         <h2 class="visually-hidden">Навигация</h2>
         <ul class="footer-nav-list footer-site-nav-list">
@@ -358,7 +360,6 @@
           </li>
         </ul>
       </section>
-      <p class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55</p>
     </div>
     <div class="footer-bar">
       <div class="container col-3">
@@ -367,20 +368,18 @@
           <h2 class="visually-hidden">Копирайт</h2>
           <p>© 2010–2019 Компания «Техномарт» Все права защищены</p>
         </div>
-        <div class="footer-socials">
-          <h2 class="visually-hidden">Социальные сети</h2>
-          <ul class="footer-socials-list">
-            <li>
-              <a class="button footer-socials-item vk" href=""><span class="visually-hidden">ВКонтакте</span></a>
-            </li>
-            <li>
-              <a class="button footer-socials-item fb" href=""><span class="visually-hidden">Фейсбук</sapn></a>
-            </li>
-            <li>
-              <a class="button footer-socials-item ig" href=""><span class="visually-hidden">Инстаграм</span></a>
-            </li>
-          </ul>
-        </div>
+        <h2 class="visually-hidden">Социальные сети</h2>
+        <ul class="footer-socials-list">
+          <li>
+            <a class="button footer-socials-item vk" href=""><span class="visually-hidden">ВКонтакте</span></a>
+          </li>
+          <li>
+            <a class="button footer-socials-item fb" href=""><span class="visually-hidden">Фейсбук</sapn></a>
+          </li>
+          <li>
+            <a class="button footer-socials-item ig" href=""><span class="visually-hidden">Инстаграм</span></a>
+          </li>
+        </ul>
         <div class="developer-info">
           <h2 class="visually-hidden">Информация о разработчике</h2>
           <ul class="developer-list">
