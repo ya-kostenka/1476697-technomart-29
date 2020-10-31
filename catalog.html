@@ -139,16 +139,22 @@
           <h2>ФИЛЬТР:</h2>
           <fieldset class="price-filter">
             <legend class="filter-heading">ЦЕНА</legend>
-            <!-- Фильтр с диапазоном -->
-            <div class="number-list">
-              <div class="number">
-                <input class="number-input" type="text" id="min-number" value="0">
-                <label for="min-number"></label>
+            <div class="price-list">
+              <div class="price-range">
+                <div class="price-scale">
+                  <div class="price-scale-bar"></div>
+                </div>
+                <div class="price-toggle price-min-toggle" tabindex="0"></div>
+                <div class="price-toggle price-max-toggle" tabindex="0"></div>
+              </div>
+              <div class="price-number">
+                <input class="price-input" type="text" id="min-price" value="0">
+                <label for="min-price"></label>
               </div>
               <span>—</span>
-              <div class="number">
-                <input class="number-input" type="text" id="max-number" value="30000">
-                <label for="max-number"></label>
+              <div class="price-number">
+                <input class="price-input" type="text" id="max-price" value="30000">
+                <label for="max-price"></label>
               </div>
             </div>
           </fieldset>
@@ -412,7 +418,7 @@
         <ul class="developer-list">
           <li class="developer-item developer-mail">
             <h3>Обратная связь:</h3>
-            <a href="email:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </li>
           <li class="developer-item developer-site">
             <h3>Разработано —</h3>
