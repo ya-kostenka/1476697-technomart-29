@@ -40,6 +40,7 @@ img {
   line-height: 30px;
   margin: 0;
   padding: 0;
+  text-transform: uppercase;
 }
 
 .section-text {
@@ -110,6 +111,7 @@ img {
   text-align: center;
   padding: 11px 0 9px 0;
   box-sizing: border-box;
+  text-transform: uppercase;
 }
 
 .more-details-button:hover {
@@ -138,6 +140,7 @@ img {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+  height: 100%;
 }
 
 .logo {
@@ -167,56 +170,55 @@ img {
 }
 
 .header-logo {
-  height: 42px;  
+  height: 100%;  
 }
 
-.search-input-container {
-  margin: 0;
-  padding: 0;
-  height: 42px;
+.search {
+  height: 100%;
   flex-grow: 1;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  align-items: center;
-  background-color: red;
+  position: relative;
 }
 
-.search-icon {
-  margin: 0 8px 0 18px;
+.search-input {
+  width: 100%;
+  height: 100%;
   border: none;
-  background: none;
-  padding: 0;
-}
-
-.search-label {
+  background: transparent;
+  margin: 0;
+  padding: 0 0 0 42px;
   font-size: 18px;
   line-height: 24px;
   color: var(--basic-white);
 }
 
-.search-input {
-  color: white;
-  border: transparent;
-  background: none;
-  margin: 0;
-  padding: 0;
+.search-icon {
+  position: absolute;
+  top: 12px;
+  left: 17px;
 }
 
-/* Не получается изменить фон и цвет иконки при клике на поиск
+.search-icon path {
+  opacity: 0.3;
+}
 
-.search-input:focus .search-input-container,
-.search-input:active .search-input-container,
- {
+.search-input:hover + .search-icon path {
+  opacity: 1;
+}
+
+.search-input:focus {
+  outline: none;
   background-color: var(--basic-white);
+  color: var(--basic-black);
 }
 
-.search-input:focus .search-icon path,
-.search-input:active .search-icon path {
-  fill: #EE3643;
+.search-input:focus + .search-icon path {
+  opacity: 1;
+  fill: #ee3643;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
-
-*/
 
 .purchase-list {
   margin: 0;
@@ -589,6 +591,7 @@ img {
   width: 135px;
   text-align: center;
   padding: 10px 0;
+  text-transform: uppercase;
 }
 
 .goods-nav-more-details:hover {
@@ -767,7 +770,7 @@ img {
   display: none;
 }
 
-.special-offers-slide--active {
+.special-offers-slide-current {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 104px 1fr;
@@ -787,6 +790,7 @@ img {
   color: var(--basic-white);
   margin: 0 0 5px;
   padding: 0;
+  text-transform: uppercase;
 }
 
 .special-offer-title p {
@@ -953,10 +957,8 @@ img {
   height: 38px;
   font-size: 14px;
   line-height: 18px;
-}
-
-.purchase-button:hover {
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 .buy-button {
@@ -1002,6 +1004,7 @@ img {
 .brands-item {
   background: #ffffff;
   border: 1px solid #eaeaea;
+  box-sizing: border-box;
   width: 220px;
   height: 145px;
 }
@@ -1097,13 +1100,13 @@ img {
   cursor: pointer;
 }
 
-.services-item--active {
+.services-item-current {
   background: #ffffff;
   box-shadow: 0px 1px 0px #ffffff;
   color: #32425c;
 }
 
-.services-item--active:hover {
+.services-item-current:hover {
   background: #ffffff;
   box-shadow: 0px 1px 0px #ffffff;
   cursor: default;
@@ -1132,6 +1135,7 @@ img {
 .services-info-item .section-text {
   margin: 0;
   padding: 0;
+  width: 300px;
 }
 
 .services-info-item::after {
@@ -1164,22 +1168,18 @@ img {
   margin-bottom: 24px;
 }
 
-.shop-info .section-text {
-  margin-bottom: 28px;
+.shop-info .section-text-container {
+  margin-bottom: 1px;
 }
 
-.shop-info .section-text:last-of-type {
-  margin-bottom: 0;  
+.section-text-container .section-text + .section-text {
+  margin-top: 30px;
 }
 
 .shipping-partners-list {
   margin: 0 0 20px;
   padding: 0;
   list-style: none;
-}
-
-.shop-info .more-details-button {
-  width: 220px;
 }
 
 .shipping-partners-item {
@@ -1203,6 +1203,11 @@ img {
   top: 12px;
   left: 0;
   background-image: url("../img/line-marker.svg");
+  background-repeat: no-repeat;
+}
+
+.shop-info .more-details-button {
+width: 220px;
 }
 
 .contacts {
@@ -1552,7 +1557,7 @@ img {
   margin-bottom: 9px;
   padding: 39px 20px;
   box-sizing: border-box;
-  border-radius: 5px;
+  border-radius: 2px;
   position: relative;
 }
 
@@ -1606,7 +1611,7 @@ img {
   line-height: 18px;
   text-align: center;
   border: none;
-  border-radius: 5px;
+  border-radius: 2px;
   background: #F7F3EC;
 }
 
@@ -1929,17 +1934,17 @@ img {
   border: 1px solid #ee3643;
 }
 
-.pagination-item--active {
+.pagination-item-current {
   border: none;
   background: #EE3643;
   color: var(--basic-white);
 }
 
-.pagination-item--active:hover {
+.pagination-item-current:hover {
   border: none;
 }
 
-.pagination-item--active:active {
+.pagination-item-current:active {
   border: none;
 }
 
@@ -1958,4 +1963,126 @@ img {
 
 .perforators-info .section-text {
   width: 907px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 620px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background-color: var(--basic-white);
+  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: "Cuprum", sans-serif;
+  display: none;
+}
+
+.modal::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 7px;
+  background-color: #EE3643;
+}
+
+.close-button {
+  position: absolute;
+  top: 18px;
+  right: 11px;
+  width: 21px;
+  height: 21px;
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/icon-close.svg");
+  cursor: pointer;
+}
+
+.modal-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 37px 0;
+  background-color: #F1F1F1;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.modal-write-us {
+  top: auto;
+  bottom: 352px;
+}
+
+.write-us-data {
+  padding: 46px 80px 37px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.write-us-data p {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0;
+  margin: 0 0 13px;
+}
+
+.write-us-data p:last-child {
+  margin-bottom: 0;
+}
+
+.write-us-label {
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 11px;
+}
+
+.write-us-input {
+  border: 2px solid #C5C5C5;
+  box-sizing: border-box;
+  border-radius: 2px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  padding-left: 12px;
+}
+
+.write-us-textinput {
+  width: 220px;
+  height: 38px;
+}
+
+.write-us-textarea {
+  width: 460px;
+  height: 114px;
+}
+
+.modal-buttons .modal-submit-button {
+  width: 460px;
+  height: 38px;
+  color: var(--basic-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #EE3643;
+  border: none;
+  text-transform: uppercase;
+}
+
+.modal-map {
+  width: 943px;
+  top: auto;
+  bottom: 333px;
 }
