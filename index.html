@@ -183,7 +183,7 @@
         <a class="basic-button" href="">Вce популярные товары</a>
       </div>
       <ul class="goods-list col-4">
-        <li class="goods-item" tabindex="0">
+        <li class="goods-item">
           <img class="good-image" width="184" height="164" src="img/9000.jpg" alt="">
           <div class="goods-purchase-options">
             <button class="button purchase-button buy-button"
@@ -195,7 +195,7 @@
           <p class="old-price">32500 р.</p>
           <p class="actual-price">25500 р.</p>
         </li>
-        <li class="goods-item new" tabindex="0">
+        <li class="goods-item new">
           <img class="good-image" src="img/3000.jpg" width="127" height="112" alt="">
           <div class="goods-purchase-options">
             <button class="button purchase-button buy-button"
@@ -207,7 +207,7 @@
           <p class="old-price"> 22500 р. </p>
           <p class="actual-price">15500 р.</p>
         </li>
-        <li class="goods-item" tabindex="0">
+        <li class="goods-item">
           <img class="good-image" src="img/6000.jpg" width="144" height="128" alt="">
           <div class="goods-purchase-options">
             <button class="button purchase-button buy-button"
@@ -219,7 +219,7 @@
           <p class="old-price"> 30500 р. </p>
           <p class="actual-price">25500 р.</p>
         </li>
-        <li class="goods-item new" tabindex="0">
+        <li class="goods-item new">
           <img class="good-image" src="img/2000.jpg" width="127" height="112" alt="">
           <div class="goods-purchase-options">
             <button class="button purchase-button buy-button"
@@ -336,8 +336,7 @@
         <div class="map">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651595!2d30.320894616006086!3d59.93879418187624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1603814166804!5m2!1sru!2sru"
-            width="300" height="158" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-            tabindex="0"></iframe>
+            width="300" height="158" aria-hidden="false" tabindex="0"></iframe>
           <img class="visually-hidden" src="img/map.png" width="300" height="158"
             alt="Карта офиса по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
         </div>
@@ -441,8 +440,9 @@
         </li>
         <li>
           <label class="write-us-label" for="write-us-textarea">Текст письма:</label>
-          <input class="write-us-input write-us-textarea" name="write-us-textarea" id="write-us-textarea" type="text"
-            placeholder="В свободной форме" aria-describedby="write-us-textarea-desc" aria-required="true" required>
+          <textarea class="write-us-input write-us-textarea" name="write-us-textarea" id="write-us-textarea"
+            placeholder="В свободной форме" aria-describedby="write-us-textarea-desc" aria-required="true"
+            required></textarea>
           <p class="visually-hidden" id="write-us-textarea-desc">Напишите письмо в свободной форме</p>
         </li>
       </ul>
@@ -456,8 +456,7 @@
     <h2 class="visually-hidden">Карта</h2>
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651595!2d30.320894616006086!3d59.93879418187624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1603814166804!5m2!1sru!2sru"
-      width="943" height="449" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-      tabindex="0"></iframe>
+      width="943" height="449" aria-hidden="false" tabindex="0"></iframe>
     <img class="visually-hidden" src="img/map.png" width="943" height="449"
       alt="Карта офиса по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
     <button class="button close-button"><span class="visually-hidden">Закрыть</span></button>
