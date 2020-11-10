@@ -1,3 +1,5 @@
+/* Purchase menu good-card */
+
 let clickCarts = document.querySelectorAll(".buy-button");
 let clickFavs = document.querySelectorAll(".to-favs-button")
 let modalCartFull = document.querySelector(".modal-cart-full");
